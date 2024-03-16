@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+	background-color: #27272c;
+}
+
+h2{
+	text-align: center;
+	color: white;
+	font-family: "Noto Sans", sans-serif;
+}
+
+/*Header*/
+
+header{
+}
+.header_d{
+	background-color: #8f0d38;
+	width: 100%;
+	height: 85px;
+	display: flex;
+	justify-items: center;
+}
+h1{
+	margin-left: 35px;
+	font-family: "Noto Sans", sans-serif;
+	color: #fff;
+}
+
+/*navigation*/
+
+nav{
+	width: 20%;
+	float: left;
+}
+
+/*main*/
+
+
+.d_main{
+	height: 750px;
+	width: 1200px;
+	margin-right: 105px;
+	background-color: #36395A;
+	border-radius: 3%;
+	display: inline-block;
+	float: right;
+	display: flex;
+	justify-items: center;
+	margin-bottom: 10px;
+}
+.img_main{
+	border-radius: 10%;
+	margin-left: 135px;
+	margin-top: 50px;
+	scale: 120%;
+}
+.img_main2{
+	border-radius: 10%;
+	margin-left: 75px;
+	margin-top: 50px;
+	width: 70%;
+}
+article{
+	width: 80%;
+	color: white;
+	font-family: "PT Sans", sans-serif;
+	font-size: 21px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-top: 45px;
+}
+.d1{
+	height: 700px;
+	width: 500px;
+	margin-left: 55px;
+	background-color: #2b2c3b;
+	margin-top: 25px;
+	border-radius: 5%;
+}
+.d2{
+	float: right;
+	height: 700px;
+	width: 500px;
+	margin-left: 95px;
+	background-color: #2b2c3b;
+	margin-top: 25px;
+	border-radius: 5%;
+}
+
+/*My contact*/
+
+ul{
+	text-decoration: none;
+	list-style: none;
+}
+
+.ul1{
+	display: flex;
+}
+
+
+.my_contact{
+	height: 300px;
+	clear: both;
+	background-color: #36395A;
+	margin: 20px;
+}
+
+.map{
+	float: right;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+
+.img1{
+	margin-top: 20px;
+	width: 75px;
+	margin-right: 25px;
+}
+
+P{
+	font-family: "PT Sans", sans-serif;
+	margin-left: -10px;
+	color: white;
+}
+
+/*My works*/
+
+.my_works{
+	height: 320px;
+	width: 30%;
+	float: left;
+	position: absolute;
+	margin-top: 225px;
+}
+
+a.b2{
+	text-decoration: none;
+	color: white;
+}
+
+button.b1 {
+  margin-top: 10px;
+  margin-left: 45px;
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  transition: 0.2s;
+  transform-origin: center;
+}
+
+button.b1:hover {
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 3.1rem;
+  background: var(--clr);
+  color: var(--clr);
+  animation: box 3s infinite;
+}
+
+button.b1::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #272822;
+}
+
+button.b1 span {
+  position: relative;
+  z-index: 1;
+}
+button.b1 i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+button.b1 i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+button.b1:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+button.b1 i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+button.b1:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}
+
+@media only screen and (max-width:800px){
+	nav,main,aside{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:800px){
+	aside{
+		top: 925px;
+	}
+}
+
+@media only screen and (max-width:800px){
+	.d_main,.d1,.d2{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:800px){
+	.d_main{
+		margin-right: -2px;
+	}
+}
+
+@media only screen and (max-width:800px){
+	.img_main{
+		margin-left: 75px;
+	}
+}
+
+@media only screen and (max-width:800px){
+	article{
+		margin-left: 10px;
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width:800px){
+	.d1,.d2{
+		margin-left: 10px;
+	}
+}
